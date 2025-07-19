@@ -59,7 +59,7 @@ const RouteManager=()=>{
       <Route path="/train-search" element={<TrainSearchResults/>}></Route>
       <Route path="/login" element={<Login
        isOpen={true}
-              onClose={() => navigate(-1)}
+              onClose={() => navigate("/")}
               onLogin={() => {}}
               switchToRegister={() => {}}/>}/>
       <Route path="/booking-confirmation" element={<BookingConfirmation/>}></Route>
