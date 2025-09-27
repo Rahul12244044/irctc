@@ -33,8 +33,14 @@ const ModifySearch = () => {
       return;
     }
     const {from,to,date,travelClass,quota}=searchParams;
-    navigate(`/train-search?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}
-    &date=${encodeURIComponent(date)}&class=${encodeURIComponent(travelClass)}&quota=${encodeURIComponent(quota)}`);
+    navigate(
+  `/train-search?from=${encodeURIComponent(from)}&to=${encodeURIComponent(
+    to
+  )}&date=${encodeURIComponent(date)}&class=${encodeURIComponent(
+    travelClass
+  )}&quota=${encodeURIComponent(quota)}`
+);
+
   }
   // Function to swap From and To stations
   const handleSwap=()=>{
