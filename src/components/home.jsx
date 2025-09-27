@@ -29,8 +29,13 @@ export const Home=()=>{
       return;
     }
     //navigate to train-search url
-    navigate(`/train-search?from=${encodeURIComponent(stationFrom)}&to=${encodeURIComponent(stationTo)}
-    &date=${encodeURIComponent(date)}&class=${encodeURIComponent(selectedClass)}&quota=${encodeURIComponent(quota)}`);
+    navigate(
+  `/train-search?from=${encodeURIComponent(stationFrom)}&to=${encodeURIComponent(
+    stationTo
+  )}&date=${encodeURIComponent(date)}&class=${encodeURIComponent(
+    selectedClass
+  )}&quota=${encodeURIComponent(quota)}`
+);
   }
   const handleAllTrains=()=>{
     console.log("handleAllTrains");
@@ -41,7 +46,7 @@ export const Home=()=>{
     <div className={styles.container}>
       <div className={styles.background}>
         <img
-          src="https://images6.alphacoders.com/702/thumb-1920-702963.jpg"
+          src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-ea04-61fa-8906-22cab8cefbad/raw?se=2025-09-27T06%3A39%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=7720e695-ee37-59c1-9855-01a9ada15fc5&skoid=8cb40e9f-389f-4cf6-afaa-e5bd4c7fd98c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-26T17%3A01%3A41Z&ske=2025-09-27T17%3A01%3A41Z&sks=b&skv=2024-08-04&sig=jisWP4y4E6JR5BNXs2IV4ESr45e65sZBOiT94CPIwFY%3D"
           alt="Train Background"
           className={styles.trainImage}
         />

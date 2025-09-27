@@ -6,6 +6,7 @@ import html2pdf from "html2pdf.js";
 function BookingConfirmation() {
   const location = useLocation();
   const navigate = useNavigate();
+
   const { bookingId, bookingDetails } = location.state || {};
 
   const ticketRef = useRef();
